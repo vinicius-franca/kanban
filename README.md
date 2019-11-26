@@ -37,7 +37,7 @@ Pré-condições: Requisito 1
 
 1. Como usuário, gostaria que ao acessar a tab desenvolvedores
 - E que esta tab apresentasse uma grid, com os desenvolvedores previamente cadastrados
-1. Como usuário, gostaria que nessa aba tivesse um botão Adicionar
+2. Como usuário, gostaria que nessa aba tivesse um botão Adicionar
 - E ao clicar no botão, abrisse um formulário
 - E neste formulário houvesse um campo para informar o nome do desenvolvedor
 - E ao final do formulário houvesse um botão Salvar
@@ -51,7 +51,7 @@ Pré-condições: Requisito 1
 
 1. Como usuário, gostaria que ao acessar a tab Kanban
 - E que esta tab apresentasse uma grid, com os Kanbans previamente cadastrados
-1. Como usuário, gostaria que nessa aba tivesse um botão Adicionar
+2. Como usuário, gostaria que nessa aba tivesse um botão Adicionar
 - E ao clicar no botão, abrisse um formulário
 - E neste formulário houvesse um campo para informar um título para o Kanban
 - E ao final do formulário houvesse um botão Salvar
@@ -65,7 +65,7 @@ Pré-condições: Requisito 1
 
 1. Como usuário, gostaria que ao acessar a tab Raias
 - E que esta tab apresentasse uma grid, com as Raias previamente cadastrados
-1. Como usuário, gostaria que nessa aba tivesse um botão Adicionar
+2. Como usuário, gostaria que nessa aba tivesse um botão Adicionar
 - E ao clicar no botão, abrisse um formulário
 - E neste formulário houvessem os seguintes campos:
 * um listbox para selecionar o kanban, ao qual esta Raia pertence
@@ -81,7 +81,7 @@ Pré-condições: Requisito 1
 
 1. Como usuário, gostaria que ao acessar a tab Post its
 - E que esta tab apresentasse uma grid, com os Post its previamente cadastrados
-1. Como usuário, gostaria que nessa aba tivesse um botão Adicionar
+2. Como usuário, gostaria que nessa aba tivesse um botão Adicionar
 - E ao clicar no botão, abrisse um formulário
 - E neste formulário houvessem os seguintes campos:
 * um listbox para selecionar o kanban, ao qual este Post it pertence
@@ -127,11 +127,11 @@ Pré-condições: Requisito 1
 1. Como usuário, gostaria de que ao acessar a tab Board fosse apresentado um listbox no topo da página
 - E que este litbox apresente a lista dos Kanbans previamente cadastrados
 - E que ao selecionar uma das opções seja gerado um Board
-1. Como usuário, gostaria que no Board fossem apresentadas todas as Raias cadastradas para o Kanban selecionado
+2. Como usuário, gostaria que no Board fossem apresentadas todas as Raias cadastradas para o Kanban selecionado
 - E que todas as Raias ocupassem a mesma largura
 - E que cada Raia tenha uma linha para cada Desenvolvedor
 - E que cada Raia x Desenvolvedor tenhas os post it devidos
-1. Como usuário, gostaria de ter uma opção de mouse (botão direito) que me permita alterar a Raia de um post it
+3. Como usuário, gostaria de ter uma opção de mouse (botão direito) que me permita alterar a Raia de um post it
 - E que ao selecionar a opção de mouse seja apresentado um formulário
 - E que neste formulário tenha um listbox
 - E que neste listbox apresente todas as Raias cadastradas para este Kanban
@@ -139,7 +139,7 @@ Pré-condições: Requisito 1
 - E que ao clicar no botão, seja fechado o formulário
 - E que o Kanban seja atualizado
 - E que o Post it seja apresentado na Raia correta
-1. Como usuário, gostaria que ao clicar em um post it (botão esquerdo) seja aberta uma dialog
+4. Como usuário, gostaria que ao clicar em um post it (botão esquerdo) seja aberta uma dialog
 - E nesta dialog apresente todas as informações do post it
 
 Exceções:
