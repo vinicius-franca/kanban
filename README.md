@@ -6,7 +6,7 @@
 1. Implemente os Casos de uso e os requisitos não funcionais
 1. Crie um pull request com a proposta de solução
 
-## Fase 1
+## Fase 1 (DeadLine 13/12)
 
 ### Requisitos funcionais
 
@@ -96,7 +96,7 @@ Pré-condições: Requisito 1
 - E voltasse para a lista de Raias
 - E que esta lista fosse atualizada apresentando a Raia cadastrado
 
-## Fase 2
+## Fase 2 (DeadLine 22/12)
 
 ### Requisitos funcionais
 
@@ -145,3 +145,13 @@ Pré-condições: Requisito 1
 Exceções:
 
 1. Caso hajam mais post its do que é suportado pela largura da Raia, escolher como apresentá-los
+
+
+## O que Estudar?
+**Tópicos para estudar**
+- CleanCode Boas práticas [link-1](https://pt.slideshare.net/rodrigokono/boas-prticas-tcnica-para-um-cdigo-limpo-clean-code);
+- JS com TDD na Prática [Seção 2 - ES6](https://www.udemy.com/course/js-com-tdd-na-pratica/);
+- Gerador de formulário com Angular e JSON Schema;
+- Criar CRUD utilizando localStorage ou afins; 
+- Padrão EventBus e EventBus com Javascript;
+- Padrão MVC utilizando AngularJS;
