@@ -10,10 +10,10 @@
 
 ### Requisitos funcionais
 
-1. Criar cadastro de desenvolvedores
-1. Criar cadastro de kanbans
-1. Criar cadastro de postits, sendo cada postit pertencente a um kanban
-1. Criar cadastro de raias, sendo que cada raia deve percenter a um kanban
+1. [ ] Criar cadastro de desenvolvedores
+1. [ ] Criar cadastro de kanbans
+1. [ ] Criar cadastro de postits, sendo cada postit pertencente a um kanban
+1. [ ] Criar cadastro de raias, sendo que cada raia deve percenter a um kanban
 
 ### Requisitos não funcionais
 
@@ -100,7 +100,7 @@ Pré-condições: Requisito 1
 
 ### Requisitos funcionais
 
-1. Criar um Kanban, com as Raias previamente cadastradas
+1. [ ] Criar um Kanban, com as Raias previamente cadastradas
 
 ### Requisitos não funcionais
 
@@ -149,9 +149,9 @@ Exceções:
 
 ## O que Estudar?
 **Tópicos para estudar**
-- CleanCode Boas práticas [link-1](https://pt.slideshare.net/rodrigokono/boas-prticas-tcnica-para-um-cdigo-limpo-clean-code);
-- JS com TDD na Prática [Seção 2 - ES6](https://www.udemy.com/course/js-com-tdd-na-pratica/);
-- Gerador de formulário com Angular e JSON Schema;
-- Criar CRUD utilizando localStorage ou afins; 
-- Padrão EventBus e EventBus com Javascript;
-- Padrão MVC utilizando AngularJS;
+- [ ] CleanCode Boas práticas [link-1](https://pt.slideshare.net/rodrigokono/boas-prticas-tcnica-para-um-cdigo-limpo-clean-code);
+- [ ] JS com TDD na Prática [Seção 2 - ES6](https://www.udemy.com/course/js-com-tdd-na-pratica/);
+- [ ] Gerador de formulário com Angular e JSON Schema;
+- [ ] Criar CRUD utilizando localStorage ou afins; 
+- [ ] Padrão EventBus e EventBus com Javascript;
+- [ ] Padrão MVC utilizando AngularJS;
