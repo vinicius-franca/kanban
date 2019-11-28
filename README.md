@@ -149,8 +149,13 @@ Exceções:
 
 ## O que Estudar?
 **Tópicos para estudar**
-- [ ] CleanCode Boas práticas [link-1](https://pt.slideshare.net/rodrigokono/boas-prticas-tcnica-para-um-cdigo-limpo-clean-code);
+- [ ] CleanCode Boas práticas 
+  --[link-1](https://pt.slideshare.net/rodrigokono/boas-prticas-tcnica-para-um-cdigo-limpo-clean-code);
 - [ ] JS com TDD na Prática [Seção 2 - ES6](https://www.udemy.com/course/js-com-tdd-na-pratica/);
+  --<https://github.com/willianjusten/es6-curso>
+  --<http://es6-features.org/>
+  --<https://ponyfoo.com/articles/tagged/es6-in-depth>
+  --<https://nipher.io/blog/>
 - [ ] Gerador de formulário com Angular e JSON Schema;
 - [ ] Criar CRUD utilizando localStorage ou afins; 
 - [ ] Padrão EventBus e EventBus com Javascript;
