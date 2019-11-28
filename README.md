@@ -147,15 +147,15 @@ Exceções:
 1. Caso hajam mais post its do que é suportado pela largura da Raia, escolher como apresentá-los
 
 
-## O que Estudar?
+## Material de Apoio
 **Tópicos para estudar**
-- [ ] CleanCode Boas práticas 
-  --[link-1](https://pt.slideshare.net/rodrigokono/boas-prticas-tcnica-para-um-cdigo-limpo-clean-code);
-- [ ] JS com TDD na Prática [Seção 2 - ES6](https://www.udemy.com/course/js-com-tdd-na-pratica/);
-  --<https://github.com/willianjusten/es6-curso>
-  --<http://es6-features.org/>
-  --<https://ponyfoo.com/articles/tagged/es6-in-depth>
-  --<https://nipher.io/blog/>
+- [ ] CleanCode Boas práticas <br> [Apresentação](https://pt.slideshare.net/rodrigokono/boas-prticas-tcnica-para-um-cdigo-limpo-clean-code)
+- [ ] JS com TDD na Prática [Seção 2 - ES6](https://www.udemy.com/course/js-com-tdd-na-pratica/)
+  <br> **Links:**
+  <br> <https://github.com/willianjusten/es6-curso>
+  <br> <http://es6-features.org/>
+  <br> <https://ponyfoo.com/articles/tagged/es6-in-depth>
+  <br> <https://nipher.io/blog/>
 - [ ] Gerador de formulário com Angular e JSON Schema;
 - [ ] Criar CRUD utilizando localStorage ou afins; 
 - [ ] Padrão EventBus e EventBus com Javascript;
