@@ -160,3 +160,4 @@ Exceções:
 - [ ] Criar CRUD utilizando localStorage ou afins; 
 - [ ] Padrão EventBus e EventBus com Javascript;
 - [ ] Padrão MVC utilizando AngularJS;
+- [ ] Web Components;
