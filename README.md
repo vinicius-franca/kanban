@@ -156,7 +156,9 @@ Exceções:
   <br> <http://es6-features.org/>
   <br> <https://ponyfoo.com/articles/tagged/es6-in-depth>
   <br> <https://nipher.io/blog/>
+  <br> https://medium.com/better-programming/never-write-another-for-loop-in-javascript-9db11afa6445
 - [ ] Gerador de formulário com Angular e JSON Schema;
 - [ ] Criar CRUD utilizando localStorage ou afins; 
 - [ ] Padrão EventBus e EventBus com Javascript;
 - [ ] Padrão MVC utilizando AngularJS;
+- [ ] Web Components;
