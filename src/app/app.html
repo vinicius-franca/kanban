@@ -1,25 +1,20 @@
-<header class="pt-5">
-    <h1 class="text-center">Kanban Application</h1>
-</header>
-<main class="d-flex justify-content-center">
-    <div class="container">
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link" href="#!/stickers">Post-its</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#!/lanes">Raias</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#!/kanbans">Kanban's</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#!/developers">Desenvolvedores</a>
-            </li>
-        </ul>
-        <div class="rounded p-5">
-            <div class="container" ng-view>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#!/boards">Boards</a>
+            <a class="nav-item nav-link" href="#!/stickers">Post-its</a>
+            <a class="nav-item nav-link" href="#!/lanes">Raias</a>
+            <a class="nav-item nav-link" href="#!/kanbans">Kanban's</a>
+            <a class="nav-item nav-link" href="#!/developers">Desenvolvedores</a>
             </div>
         </div>
+    </nav>
+</header>
+<main>
+    <div class="container-fluid" ng-view>
     </div>
 </main>

@@ -1,22 +1,53 @@
-/* styles in src/style directory are applied to the whole page */
+@import url('./bootstrap.min.css');
+
 body {
-  background: #0147A7;
-  color: #fff;
+  background: #33363D;
 }
 
-a {
-  color: #03A9F4;
+body,
+app {
+  height: calc(100vh - 56px);
 }
 
+.container-fluid,
 main {
-  padding: 1em;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin-top: 50px;
-  display: block;
+  min-height: 100%;
 }
 
-footer {
-  text-align: center;
-  font-size: 0.8em;
+board-component .board {
+  min-height: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+board-component .board .lane {
+  flex: 1;
+  margin: 0 5px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+board-component .board .lane .lane-header {
+  background-color: #2A92BF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+board-component .board .lane .lane-header h2 {
+  color: #fff;
+  font-size: 0.8rem;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+board-component .board .lane .developer {
+  color: #fff;
+  margin: 10px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.4);
 }

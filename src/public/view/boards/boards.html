@@ -1,0 +1,8 @@
+
+<div class="form-group m-3">
+    <label class="mr-3 text-white">Select your Kanban:</label>
+    <select class="form-control" ng-model="teste" ng-change="changeKanban(teste)">
+        <option ng-repeat="kanban in kanbans" value="{{ kanban.name }}">{{ kanban.name }}</option>
+    </select>
+</div>
+<board-component lanes="lanesByKanban" developers="developers"></board-component>

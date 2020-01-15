@@ -96,7 +96,7 @@ Pré-condições: Requisito 1
 - E voltasse para a lista de Raias
 - E que esta lista fosse atualizada apresentando a Raia cadastrado
 
-## Fase 2 (DeadLine 22/12)
+## Fase 2 (DeadLine 27/12)
 
 ### Requisitos funcionais
 
