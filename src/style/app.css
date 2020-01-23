@@ -1,12 +1,12 @@
 @import url('./bootstrap.min.css');
 
 body {
-  background: #33363D;
+  background: #cecece;
 }
 
 body,
 app {
-  height: calc(100vh - 56px);
+  height: calc(100vh - 75px);
 }
 
 .container-fluid,
@@ -18,12 +18,36 @@ board-component .board {
   min-height: 100%;
   display: flex;
   align-items: flex-start;
-  margin-top: 30px;
+  margin: 30px 0;
+}
+
+board-component .board .developer-col{
+  padding-top: 35px;
+  max-width: 200px;
+}
+
+board-component .board .developer-col div{
+  height: 200px;
+  display: flex;
+  align-items:center;
+  color:#0e0e0e;
+  font-weight: bold;
+  margin:10px 0;
+}
+
+board-component .board .developer-col div p {
+  background: #fff;
+  padding:5px 10px;
+  margin:0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
 }
 
 board-component .board .lane {
   flex: 1;
-  margin: 0 5px;
+  margin: 0 1px;
   position: relative;
   background: rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -46,8 +70,63 @@ board-component .board .lane .lane-header h2 {
 }
 
 board-component .board .lane .developer {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
   color: #fff;
   margin: 10px;
-  height: 100px;
-  background: rgba(0, 0, 0, 0.4);
+  height: 200px;
+  overflow-y: auto;
+  border-bottom: solid 1px #cecece;
+  position: relative;
+}
+board-component .board .lane .developer #contextmenu-node {
+  position: absolute;
+  background-color: white;
+  border: solid #CCCCCC 1px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+board-component .board .lane .developer .contextmenu-item {
+  color:#0e0e0e;
+  cursor:pointer;
+  padding: 0.2em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+board-component .board .lane .developer .contextmenu-item:hover {
+  background-color: #CCCCCC;
+  cursor: default;
+}
+
+board-component .board .sticker {
+  height: 90px;
+  background: #fff;
+  box-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  display: flex;
+  font-size: 1.0rem;
+  justify-content: center;
+  align-content: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  margin:0 2px 2px;
+  padding: 10px;
+  width: calc(50% - 4px);
+}
+
+board-component .board .sticker.feature{
+  background: chartreuse;
+}
+
+board-component .board .sticker.fix{
+  background: crimson;
+}
+
+board-component .board .sticker.spike{
+  background: darkkhaki;
 }

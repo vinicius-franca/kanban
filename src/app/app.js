@@ -5,6 +5,7 @@ import { eventBus }  from './config/eventBus';
 import table from './components/table/table.module';
 import board from './components/board/board.module';
 import form from './directives/form.module';
+import rightClick from './directives/right-click/right-click.module';
 
 import '../style/app.css';
 
@@ -24,7 +25,7 @@ class AppCtrl {
 
 const MODULE_NAME = 'app';
 
-angular.module(MODULE_NAME, [ngRoute, table, form, board])
+angular.module(MODULE_NAME, [ngRoute, table, form, board, rightClick])
   .directive('app', app)
   .controller('AppCtrl', AppCtrl)
   .config(['$routeProvider', config])

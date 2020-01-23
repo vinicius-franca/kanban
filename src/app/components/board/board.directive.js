@@ -7,7 +7,8 @@ export function boardComponent($rootScope, $compile) {
     templateUrl: './templates/board.html',
     scope: {
       lanes: '=',
-      developers: '='
+      developers: '=',
+      stickers: '='
     },
     link: linkFunc,
     controller: 'BoardController',
@@ -18,47 +19,65 @@ export function boardComponent($rootScope, $compile) {
   function linkFunc(scope, element, attribute) {
     scope.$element = element;
     
-    if (scope.developers) {
-    }
-
     $rootScope.subscribe('changeKanban', (event, data) => {
-      createLanes(data);
+      createLanes(data.lanes);      
       createRows(scope.developers);
+      createColLabel(scope.developers);
+      addStickers(data.stickers);
     });
 
     function createLanes(data){
       let wrapper = angular.element(document.querySelector('.board'));
-      wrapper.html('');
+      wrapper.html('');      
+      wrapper.append(`<div class="developer-col"></div>`);
       data.forEach((item) => {
-        wrapper.append(`<div class="lane"><div class="lane-header bg-gray text-center"><h2 class="mb-0">${ item.name }</h2></div></div>`);        
-        $compile(wrapper)(scope);
+        wrapper.append(`<div class="lane" data-name="${ item.name }"><div class="lane-header bg-gray text-center"><h2 class="mb-0">${ item.name }</h2></div></div>`); 
       });
     }
 
     function createRows(data){
-      const lanes = document.querySelectorAll('.lane');
-
+      const lanes = document.querySelectorAll('.lane');      
       lanes.forEach((lane) => {
         data.forEach((item) => {
-          let div = document.createElement("div");
+          let div = document.createElement("div");          
+          let divCol = document.createElement("div");
+          divCol.textContent = item.name;
           div.className = 'developer';
-          div.textContent = item.name;
-          lane.appendChild(div);        
+          div.setAttribute('data-name', item.name);
+          lane.appendChild(div);            
         });
       });
+    }
 
-      /* let tbody = angular.element(element).find('tbody');
-      Object.getOwnPropertyNames(data).forEach( (obj, index) => {
-        tbody.append(`<tr id="row-${ index }">${obj}</tr>`);
-        
-        let line = document.getElementById(`row-${index}`);
-        Object.keys(data[obj]).map(function(objectKey) {
-            let value = data[obj][objectKey];
-            let td = document.createElement('td');
-            td.textContent = value;
-            line.appendChild(td);
+    function createColLabel(data){  
+      const developerCol = document.querySelector('.developer-col');
+      data.forEach((item) => {
+        let div = document.createElement("div");        
+        let p = document.createElement("p");       
+        p.textContent = item.name;     
+        div.appendChild(p);
+        developerCol.appendChild(div);    
+      });
+    }
+
+    function addStickers(data){
+      const lanes = document.querySelectorAll('.lane');
+      lanes.forEach((lane) => {
+        const developers = lane.querySelectorAll('.developer');
+        developers.forEach((developer) => {          
+          data.forEach((item) => {
+            if (item.lane == lane.dataset.name && item.developer == developer.dataset.name){ 
+              let div = document.createElement("div");
+              div.className = `sticker ${ item.type }`;              
+              div.setAttribute('data-name', item.name); 
+              //div.setAttribute('right-click', '');                               
+              div.textContent = item.name;         
+              developer.appendChild(div);              
+              $compile(div)(scope);             
+            }
+          });
         });
-      }); */
+      });
     }
   }
 }
